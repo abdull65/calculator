@@ -12,6 +12,15 @@
     <div id="calculator_container">
       <input id="displayEl" value="0" readonly />
       <div class="calculator_key">
+        <button value="+" class="operatorKey" data-action="add">+</button>
+        <button class="resetKey" data-action="clear">AC</button>
+        <button value="-" class="operatorKey" data-action="subtract">-</button>
+        <button value="*" class="operatorKey" data-action="multiply">
+          &times;
+        </button>
+        <button value="/" class="operatorKey" data-action="divide">
+          &divide;
+        </button>
         <button value="1" id="numKey1" class="numKey">1</button>
         <button value="2" id="numKey2" class="numKey">2</button>
         <button value="3" id="numKey3" class="numKey">3</button>
@@ -24,15 +33,6 @@
         <button value="0" id="numKey10" class="numKey">0</button>
         <button value="." class="decimal numKey" data-action="decimal">
           .
-        </button>
-        <button value="+" class="operatorKey" data-action="add">+</button>
-        <button class="resetKey" data-action="clear">AC</button>
-        <button value="-" class="operatorKey" data-action="subtract">-</button>
-        <button value="*" class="operatorKey" data-action="multiply">
-          &times;
-        </button>
-        <button value="/" class="operatorKey" data-action="divide">
-          &divide;
         </button>
         <button value="=" class="evalKey" data-action="calculate">=</button>
       </div>

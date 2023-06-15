@@ -122,7 +122,7 @@ html {
   font-size: 30px;
   border: none;
   grid-column: 4 / 5;
-  grid-row: 1 / 5;
+  grid-row: 2 / 6;
   border-radius: 5px;
   cursor: pointer;
   transition: background 3000ms ease-in-out;
