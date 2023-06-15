@@ -155,8 +155,7 @@ html {
 /* media query */
 @media screen and (max-width: 600px) and (min-width: 300px) {
   #calculator_container {
-    margin: 50% auto;
-    transform: translateY(-50%);
+    transform: translateY(50%);
     width: 90%;
   }
 }
