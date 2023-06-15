@@ -157,14 +157,15 @@ html {
 /* media query */
 @media screen and (max-width: 600px) and (min-width: 300px) {
   #calculator_container {
-    /* transform: translateY(50%); */
     width: 90%;
     height: 100%;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    padding-top: 2rem;
   }
 
   .calculator_key {
     height: 65vh;
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 
   #displayEl {
