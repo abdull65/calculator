@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div id="calculator_container">
+      <input id="displayEl" value="0" readonly />
+      <div class="calculator_key">
+        <button value="1" id="numKey1" class="numKey">1</button>
+        <button value="2" id="numKey2" class="numKey">2</button>
+        <button value="3" id="numKey3" class="numKey">3</button>
+        <button value="4" id="numKey4" class="numKey">4</button>
+        <button value="5" id="numKey5" class="numKey">5</button>
+        <button value="6" id="numKey6" class="numKey">6</button>
+        <button value="7" id="numKey7" class="numKey">7</button>
+        <button value="8" id="numKey8" class="numKey">8</button>
+        <button value="9" id="numKey9" class="numKey">9</button>
+        <button value="0" id="numKey10" class="numKey">0</button>
+        <button value="." class="decimal numKey" data-action="decimal">
+          .
+        </button>
+        <button value="+" class="operatorKey" data-action="add">+</button>
+        <button class="resetKey" data-action="clear">AC</button>
+        <button value="-" class="operatorKey" data-action="subtract">-</button>
+        <button value="*" class="operatorKey" data-action="multiply">
+          &times;
+        </button>
+        <button value="/" class="operatorKey" data-action="divide">
+          &divide;
+        </button>
+        <button value="=" class="evalKey" data-action="calculate">=</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

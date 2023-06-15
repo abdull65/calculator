@@ -1,0 +1,206 @@
+<div class="calculator">
+  <div class="input" id="input"></div>
+  <div class="buttons">
+    <div class="operators">
+      <div>+</div>
+      <div>-</div>
+      <div>&times;</div>
+      <div>&divide;</div>
+    </div>
+    <div class="leftPanel">
+      <div class="numbers">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <div class="numbers">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+      <div class="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="numbers">
+        <div>0</div>
+        <div>.</div>
+        <div id="clear">C</div>
+      </div>
+    </div>
+    <div class="equal" id="result">=</div>
+  </div>
+</div>
+
+
+
+
+<!-- /////////////stop watch/////////////////// -->
+<div class="wrapper">
+  <h1>Stopwatch</h1>
+  <h2>Vanilla JavaScript Stopwatch</h2>
+  <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+  <button id="button-start">Start</button>
+  <button id="button-stop">Stop</button>
+  <button id="button-reset">Reset</button>
+  </div> 
+  
+  
+  
+  <!-- tip calculator -->
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <title>Tip Calculator</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+    </head>
+    <body class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card card-body text-center mt-5">
+              <h1 class="heading display-5 pb-3">Tip Calculator</h1>
+              <form id="tip-form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="number" class="form-control" id="billTotal" placeholder="Total Bill">
+                  </div>
+                </div>
+                <div class="form-group tipPersent">
+                  <div class="input-group">
+                    <label for="">Tip:</label>
+  
+  
+                    <input type="range" class="form-control" id="tipInput" value="0">
+                    <span class="input-group-addon" id="tipOutput"></span>
+                  </div>
+                </div>
+  
+  
+  
+              </form>
+              <hr>
+  
+              <!-- RESULTS -->
+              <div id="results" class="pt-4">
+                <h5>Results</h5>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Tip amount</span>
+                    <input type="number" class="form-control" id="tipAmount" disabled>
+                  </div>
+                </div>
+  
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Total Bill with Tip</span>
+                    <input type="number" class="form-control" id="totalBillWithTip" disabled>
+                  </div>
+                </div>
+  
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+     
+
+      <!-- maize game -->
+      <html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <body>
+    <div id="gradient"></div>
+    <div id="page">
+      <div id="Message-Container">
+        <div id="message">
+          <h1>Congratulations!</h1>
+          <p>You are done.</p>
+          <p id="moves"></p>
+          <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+        </div>
+      </div>
+      <div id="menu">
+        <div class="custom-select">
+          <select id="diffSelect">
+                    <option value="10">Easy</option>
+                    <option value="15">Medium</option>
+                    <option value="25">Hard</option>
+                    <option value="38">Extreme</option>                                      
+                </select>
+        </div>
+        <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
+      </div>
+      <div id="view">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <!-- to do list -->
+  <!--PEN CODE-->
+<div id="tasker" class="tasker">
+	<div id="error" class="error">Please enter a task</div>
+	<div id="tasker-header" class="tasker-header">
+		<input type="text" id="input-task" placeholder="Enter a task">
+		<button id="add-task-btn"><i class="fa fa-fw fa-plus"></i>
+		</button>
+	</div>
+	<div class="tasker-body">
+		<ul id="tasks"></ul>
+	</div>
+</div>
+<!--END PEN CODE-->
+<!-- nav toggle bar -->
+<div class="wrapper active-element">
+  <header class="main-header">
+      <nav>
+          <div class="masthead active-element">
+              <h1><a href="#0">Branding</a></h1>
+              <div id="menu-toggle" class="menu-toggle active-element">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
+              </div>
+          </div>
+          <div class="main-nav-list active-element">
+              <ul>
+                  <li><a href="#0">Demo Reel</a></li>
+                  <li><a href="#0">Faces</a></li>
+                  <li><a href="#0" class="mobile-hide">Blog</a></li>
+                  <li><a href="#0" class="active-link">About</a></li>
+                  <li><a href="#0">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+  <main class="main-contents">
+      <h2>About</h2>
+       <p>Woot! Got the (vanilla) Javascript to work!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore cumque, laborum, dolorem dolor doloribus iste qui omnis? Consequuntur sapiente mollitia iure quas. Rem nobis tenetur, est accusamus iste dolor, necessitatibus, facilis error ratione aliquid sequi voluptates dignissimos. Quidem, quam, rem? Molestias odio, perferendis dolores doloremque eum quo mollitia atque, sit inventore nisi accusamus magnam vitae temporibus maxime et in aliquam qui aliquid obcaecati alias unde repellat laudantium quam blanditiis. Blanditiis, earum itaque veritatis et numquam culpa, tempore magnam. Quas laborum voluptate id vero. Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo reprehenderit nostrum nesciunt, deleniti facere voluptas eligendi expedita dolor at praesentium sequi. Accusamus vitae ut necessitatibus aut, repudiandae voluptate! Excepturi quam explicabo quis illo, qui a ipsam sit atque non sed doloribus maiores in quo ut voluptatem neque animi, saepe facilis nemo et! Temporibus dolores deserunt illo cum aut saepe tenetur, odit velit ipsum beatae dolore illum accusantium alias ullam quas reiciendis! Quod at tenetur sint. Dolorum officia excepturi placeat, facere enim ullam, tempora accusantium culpa voluptates iusto non aperiam beatae ut laboriosam voluptatibus eum corrupti libero, laborum voluptas quasi at fugiat et vel? Eum.</p>
+  </main>
+  <footer class="main-footer active-element"><span class="copyright">&copy;2018 A. James Liptak</span></footer>
+</div>
+  </body>
+</html>
+    </body>
+  </html>
+    
+  
