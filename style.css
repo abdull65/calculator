@@ -182,4 +182,12 @@ html {
     background-color: transparent;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
+
+  .numKey:active,
+  .operatorKey:active,
+  .assign_key:active,
+  .evalKey:active,
+  .resetKey:active {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  }
 }
