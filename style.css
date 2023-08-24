@@ -156,7 +156,7 @@ html {
 }
 
 /* media query */
-@media screen and (max-width: 59em) and (min-width: 19em) {
+@media screen and (max-width: 75em) and (min-width: 19em) {
   #calculator_container {
     width: 90%;
     height: 100%;
