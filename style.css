@@ -11,7 +11,8 @@ html {
 #calculator_container {
   background: #f5f5f5;
   box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.4);
-  /* width: 300px; */
+  width: 300px;
+  height: 100%;
   margin: 20px auto;
   padding: 10px;
   padding-top: 5px;
@@ -155,7 +156,7 @@ html {
 }
 
 /* media query */
-@media screen and (max-width: 600px) and (min-width: 300px) {
+@media screen and (max-width: 59em) and (min-width: 19em) {
   #calculator_container {
     width: 90%;
     height: 100%;
